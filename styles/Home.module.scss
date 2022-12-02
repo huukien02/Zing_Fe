@@ -1,0 +1,494 @@
+.parent {
+  background: rgb(31, 30, 30);
+  .container {
+    border: 1px solid #000;
+    width: 530px;
+    margin-left: 490px;
+    background-color: lightgrey;
+    border: none;
+    padding-top: 20px;
+
+    .search {
+      input {
+        width: 82%;
+        height: 50px;
+        outline: none;
+        margin-left: 47px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        padding-top: 8px;
+        border: 1px solid gray;
+        border: none;
+        border-radius: 20px;
+        background-color: #af6fe8;
+        background-color: #9b4de0;
+        color: white;
+      }
+      ::placeholder {
+        color: white;
+      }
+      .listSearch {
+        ul {
+          border: 1px solid #000;
+          border: none;
+          padding-left: 0px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+          position: absolute;
+          left: 537px;
+          top: 118px;
+          z-index: 999;
+          background-color: #af6fe8;
+          background-color: #9b4de0;
+          width: 434px;
+          color: white;
+
+          border-bottom-left-radius: 20px;
+          border-bottom-right-radius: 20px;
+          li {
+            list-style-type: none;
+            padding-left: 60px;
+            width: 90%;
+            margin-left: 23px;
+            margin-top: 10px;
+            img {
+              border-radius: 100%;
+              width: 30px;
+              height: 30px;
+            }
+            small {
+              font-weight: bold;
+              font-family: "Courier New", Courier, monospace;
+              margin-left: 20px;
+              position: relative;
+              top: -10px;
+            }
+          }
+          li:hover {
+            color: #af6fe8;
+            color: black;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    .showSong {
+      margin-top: 30px;
+      padding-top: 20px;
+      border: 1px solid #000;
+      width: 380px;
+      padding-bottom: 30px;
+      margin-left: 75px;
+      box-shadow: 0px 0px 20px gray;
+      background-color: white;
+      border: none;
+
+      h4 {
+        text-align: center;
+        font-family: "Courier New", Courier, monospace;
+        color: gray;
+      }
+      .currentImg {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+        animation: spin 13s linear infinite;
+        margin-left: 84px;
+      }
+      @keyframes spin {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+
+      audio {
+        display: none;
+      }
+      .stepSong {
+        margin-top: 20px;
+        padding-left: 54px;
+
+        i {
+          margin-left: 35px;
+          cursor: pointer;
+          color: gray;
+        }
+      }
+    }
+    .songList {
+      padding-bottom: 30px;
+      padding-top: 20px;
+      height: 230px;
+      .itemSong {
+        /* border: 1px solid #000; */
+        background-color: white;
+        margin-top: 15px;
+        display: flex;
+        padding-top: 3px;
+        padding-bottom: 3px;
+        padding-left: 10px;
+        width: 340px;
+        margin-left: 100px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px gray;
+        border: none;
+        font-family: "Courier New", Courier, monospace;
+        img {
+          border-radius: 100%;
+          width: 50px;
+          height: 50px;
+          cursor: pointer;
+          margin-top: 10px;
+        }
+        p {
+          font-weight: bolder;
+          margin-left: 10px;
+          font-size: 15px;
+        }
+        small {
+          margin-left: 10px;
+        }
+      }
+    }
+    .page {
+      display: flex;
+      padding-top: 10px;
+      padding-bottom: 40px;
+      margin-left: 200px;
+      span {
+        margin-left: 5px;
+        button {
+          cursor: pointer;
+          font-weight: bold;
+          border: none;
+        }
+      }
+    }
+  }
+}
+.header {
+  border: 1px solid rgb(31, 30, 30);
+  background: rgb(31, 30, 30);
+  ul {
+    display: flex;
+    border: 1px solid #000;
+    padding-left: 0;
+    background: rgb(31, 30, 30);
+    border: none;
+
+    li {
+      list-style: none;
+      border: 1px solid rgb(31, 30, 30);
+      border: none;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 14px;
+      padding-bottom: 16px;
+      color: white;
+
+      a {
+        color: white;
+      }
+    }
+    li:hover {
+      background-color: rgb(41, 103, 41);
+      cursor: pointer;
+    }
+  }
+}
+.login {
+  border: 1px solid #000;
+  width: 450px;
+  height: 420px;
+  margin-left: 540px;
+  padding-left: 48px;
+  border: none;
+  border-radius: 20px;
+  padding-top: 20px;
+  margin-top: 30px;
+  box-shadow: 0px 0px 10px gray;
+
+  i {
+    position: absolute;
+    left: 910px;
+    top: 375px;
+    cursor: pointer;
+  }
+
+  .p1 {
+    padding-left: 85px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .p2 {
+    color: #1877f2;
+    font-size: 15px;
+    padding-left: 125px;
+  }
+  .p3 {
+    font-size: 16px;
+    color: gray;
+    padding-left: 32px;
+  }
+  p:nth-child(2) {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  input {
+    padding-left: 10px;
+    outline: none;
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid gray;
+  }
+  .btnLogin {
+    width: 350px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid gray;
+    background-color: #1877f2;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+  }
+  .btnSignup {
+    width: 200px;
+    height: 45px;
+    border-radius: 10px;
+    border: none;
+    background-color: #19bb34;
+    font-size: 16px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-left: 75px;
+  }
+}
+.titleLogin {
+  color: #1877f2;
+  font-size: 50px;
+  text-align: center;
+}
+
+@media only screen and (max-device-width: 414px) {
+  .parent {
+    .container {
+      width: 417px;
+      margin-left: 0px;
+
+      .search {
+        input {
+          width: 361px;
+          margin-left: 25px;
+          height: 40px;
+        }
+        .listSearch {
+          ul {
+            width: 361px;
+            position: absolute;
+            left: 25px;
+            top: 89px;
+            li {
+              padding-left: 7px;
+            }
+          }
+        }
+      }
+
+      .showSong {
+        margin-left: 27px;
+        width: 356px;
+        .currentImg {
+          margin-left: 80px;
+        }
+        .stepSong {
+          margin-left: 4px;
+          i {
+            margin-left: 30px;
+          }
+        }
+      }
+
+      .songList {
+        color: rgb(12, 12, 12);
+        .itemSong {
+          margin-left: 40px;
+        }
+      }
+      .page {
+        margin-left: 100px;
+      }
+    }
+  }
+  .login {
+    width: 355px;
+    height: 420px;
+    margin-left: 35px;
+    padding-left: 48px;
+
+    i {
+      left: 322px;
+      top: 348px;
+    }
+
+    .p1 {
+      padding-left: 45px;
+    }
+    .p2 {
+      padding-left: 75px;
+    }
+    .p3 {
+      position: relative;
+      left: -5px;
+    }
+    p:nth-child(2) {
+      // font-size: 15px;
+      // font-family: Arial, Helvetica, sans-serif;
+    }
+    input {
+      width: 300px;
+      position: relative;
+      left: -20px;
+    }
+    .btnLogin {
+      width: 300px;
+      position: relative;
+      left: -20px;
+    }
+    .btnSignup {
+      margin-left: 28px;
+    }
+  }
+
+  .header {
+    height: 60px;
+    line-height: 60x;
+    ul {
+      position: relative;
+      top: -10px;
+      li {
+        padding-left: 45px;
+        padding-right: 45px;
+        padding-top: 10px;
+        padding-bottom: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 361px) {
+  .parent {
+    .container {
+      width: 360px;
+
+      .search {
+        input {
+          width: 301px;
+          margin-left: 30px;
+          height: 40px;
+        }
+        .listSearch {
+          ul {
+            width: 301px;
+            position: absolute;
+            left: 30px;
+            top: 87px;
+            li {
+              padding-left: 7px;
+            }
+          }
+        }
+      }
+
+      .showSong {
+        margin-left: 17px;
+        width: 326px;
+        .currentImg {
+          margin-left: 60px;
+        }
+        .stepSong {
+          margin-left: 0px;
+          i {
+            margin-left: 25px;
+          }
+        }
+      }
+
+      .songList {
+        .itemSong {
+          color: rgb(7, 7, 7);
+          margin-left: 10px;
+        }
+      }
+      .page {
+        margin-left: 100px;
+      }
+    }
+  }
+
+  .login {
+    width: 355px;
+    height: 420px;
+    margin-left: 16px;
+    padding-left: 48px;
+
+    i {
+      left: 311px;
+      top: 347px;
+    }
+
+    .p1 {
+      padding-left: 45px;
+    }
+    .p2 {
+      padding-left: 75px;
+    }
+    .p3 {
+      position: relative;
+      left: -4px;
+    }
+    p:nth-child(2) {
+      // font-size: 15px;
+      // font-family: Arial, Helvetica, sans-serif;
+    }
+    input {
+      width: 300px;
+      position: relative;
+      left: -20px;
+    }
+    .btnLogin {
+      width: 300px;
+      position: relative;
+      left: -20px;
+    }
+    .btnSignup {
+      margin-left: 28px;
+    }
+  }
+
+  .titleLogin {
+    padding-left: 40px;
+  }
+
+  .header {
+    height: 60px;
+    line-height: 60x;
+    width: 360px;
+    ul {
+      position: relative;
+      top: -10px;
+      li {
+        padding-left: 40px;
+        padding-right: 37px;
+        padding-top: 10px;
+        padding-bottom: 14px;
+      }
+    }
+  }
+}
